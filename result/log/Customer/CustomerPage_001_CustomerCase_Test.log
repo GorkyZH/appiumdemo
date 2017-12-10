@@ -1,0 +1,28 @@
+2017-12-08 17:17:34[INFO]customerDemo 测试用例开始执行！
+2017-12-08 17:17:34[INFO]customerDemo 测试用例开始执行！
+2017-12-08 17:18:36[INFO]customerDemo 测试用例执行成功！
+2017-12-08 17:18:39[INFO][CustomerPage_001_CustomerCase_Test] 截图成功，保存在：[ result/screenshots/customer/CustomerPage_001_CustomerCase_Test1208171839.png ]
+2017-12-08 17:18:39[INFO]customerDemo 测试用例执行成功！
+2017-12-08 17:18:42[INFO][CustomerPage_001_CustomerCase_Test] 截图成功，保存在：[ result/screenshots/customer/CustomerPage_001_CustomerCase_Test1208171842.png ]
+2017-12-08 17:18:42[INFO]customerDemo 测试用例开始执行！
+2017-12-08 17:18:42[INFO]customerDemo 测试用例开始执行！
+2017-12-08 17:18:57[WARN]customerDemo 测试用例执行失败！org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15.39 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'GUO-PC', ip: '169.254.235.171', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_151'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=F:\appiumTest\appiumdemo\res\app\laikebao-app-release-1129-3.apk, appPackage=cn.jufuns.laikebao, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=741AECQK26845, platform=LINUX, appActivity=cn.jufuns.laikebao.activity.LoginActivity, desired={app=F:\appiumTest\appiumdemo\res\app\laikebao-app-release-1129-3.apk, appPackage=cn.jufuns.laikebao, appActivity=cn.jufuns.laikebao.activity.LoginActivity, platformVersion=6.0.1, automationName=null, sessionOverride=true, unicodeKeyboard=true, platformName=Android, deviceName=meizu, resetKeyboard=true}, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, automationName=null, browserName=Android, takesScreenshot=true, javascriptEnabled=true, sessionOverride=true, unicodeKeyboard=true, platformName=Android, resetKeyboard=true}]
+Session ID: 8db156f3-e5d5-4503-a7b6-2a7d174f2ab2
+2017-12-08 17:19:00[INFO][CustomerPage_001_CustomerCase_Test] 截图成功，保存在：[ result/screenshots/customer/CustomerPage_001_CustomerCase_Test1208171900.png ]
+2017-12-08 17:19:00[WARN]customerDemo 测试用例执行失败！org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15.39 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'GUO-PC', ip: '169.254.235.171', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_151'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=F:\appiumTest\appiumdemo\res\app\laikebao-app-release-1129-3.apk, appPackage=cn.jufuns.laikebao, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=741AECQK26845, platform=LINUX, appActivity=cn.jufuns.laikebao.activity.LoginActivity, desired={app=F:\appiumTest\appiumdemo\res\app\laikebao-app-release-1129-3.apk, appPackage=cn.jufuns.laikebao, appActivity=cn.jufuns.laikebao.activity.LoginActivity, platformVersion=6.0.1, automationName=null, sessionOverride=true, unicodeKeyboard=true, platformName=Android, deviceName=meizu, resetKeyboard=true}, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, automationName=null, browserName=Android, takesScreenshot=true, javascriptEnabled=true, sessionOverride=true, unicodeKeyboard=true, platformName=Android, resetKeyboard=true}]
+Session ID: 8db156f3-e5d5-4503-a7b6-2a7d174f2ab2
+2017-12-08 17:19:02[INFO][CustomerPage_001_CustomerCase_Test] 截图成功，保存在：[ result/screenshots/customer/CustomerPage_001_CustomerCase_Test1208171902.png ]
+2017-12-08 17:19:02[INFO]customerDemo 测试用例开始执行！
+2017-12-08 17:19:02[INFO]customerDemo 测试用例开始执行！

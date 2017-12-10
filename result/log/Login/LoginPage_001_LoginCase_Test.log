@@ -1,0 +1,9 @@
+2017-12-08 17:17:17[INFO]来客宝APP已经启动
+2017-12-08 17:17:17[INFO]loginDemo 测试用例开始执行！
+2017-12-08 17:17:17[INFO]loginDemo 测试用例开始执行！
+2017-12-08 17:17:33[INFO]loginDemo 测试用例执行成功！
+2017-12-08 17:17:33[ERROR][LoginPage_001_LoginCase_Test] ,截图失败，原因：null
+2017-12-08 17:17:33[INFO]loginDemo 测试用例执行成功！
+2017-12-08 17:17:33[ERROR][LoginPage_001_LoginCase_Test] ,截图失败，原因：null
+2017-12-08 17:17:33[INFO]执行成功的用例 = loginDemo
+2017-12-08 17:17:33[INFO]执行成功的用例 = loginDemo

@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Suite</th></tr><tr><td><a href="#t0">登录</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">17,009</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t1">我的客户</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">3</td><td class="num">67,995</td><td></td><td></td></tr><tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num attn">3</th><th class="num">85,004</th><th colspan="2"></th></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">登录 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.gorky.appiumdemo.testcases.login.LoginPage_001_LoginCase_Test</td><td><a href="#m0">loginDemo</a></td><td rowspan="1">1512724442692</td><td rowspan="1">16736</td></tr></tbody><tbody id="t1"><tr><th colspan="4">我的客户 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">com.gorky.appiumdemo.testcases.customer.CustomerPage_001_CustomerCase_Test</td><td><a href="#m1">customerDemo</a></td><td rowspan="3">1512724480997</td><td rowspan="3">15519</td></tr><tr class="failedeven"><td><a href="#m2">customerDemo</a></td></tr><tr class="failedeven"><td><a href="#m3">customerDemo</a></td></tr><tr><th colspan="4">我的客户 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.gorky.appiumdemo.testcases.customer.CustomerPage_001_CustomerCase_Test</td><td><a href="#m4">customerDemo</a></td><td rowspan="1">1512724459580</td><td rowspan="1">15627</td></tr></tbody></table><h2>登录</h2><h3 id="m0">com.gorky.appiumdemo.testcases.login.LoginPage_001_LoginCase_Test#loginDemo</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=aaa123, username=13570547723}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>我的客户</h2><h3 id="m1">com.gorky.appiumdemo.testcases.customer.CustomerPage_001_CustomerCase_Test#customerDemo</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{keyword=虹}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15.51 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:02:37&apos;
+System info: host: &apos;GUO-PC&apos;, ip: &apos;169.254.235.171&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=F:\appiumTest\appiumdemo\res\app\laikebao-app-release-1129-3.apk, appPackage=cn.jufuns.laikebao, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=741AECQK26845, platform=LINUX, appActivity=cn.jufuns.laikebao.activity.LoginActivity, desired={app=F:\appiumTest\appiumdemo\res\app\laikebao-app-release-1129-3.apk, appPackage=cn.jufuns.laikebao, appActivity=cn.jufuns.laikebao.activity.LoginActivity, platformVersion=6.0.1, automationName=null, sessionOverride=true, unicodeKeyboard=true, platformName=Android, deviceName=meizu, resetKeyboard=true}, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, automationName=null, browserName=Android, takesScreenshot=true, javascriptEnabled=true, sessionOverride=true, unicodeKeyboard=true, platformName=Android, resetKeyboard=true}]
+Session ID: 1c5ce25a-5b23-4452-8e9e-e3f27240b0d8
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:176)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:393)
+	at org.openqa.selenium.By$ById.findElement(By.java:214)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.gorky.appiumdemo.utils.AppiumUtil.findElement(AppiumUtil.java:90)
+	at com.gorky.appiumdemo.utils.AppiumUtil.doesElementsExist(AppiumUtil.java:412)
+	at com.gorky.appiumdemo.testcases.customer.CustomerPage_001_CustomerCase_Test.customerDemo(CustomerPage_001_CustomerCase_Test.java:26)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">com.gorky.appiumdemo.testcases.customer.CustomerPage_001_CustomerCase_Test#customerDemo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.ArrayIndexOutOfBoundsException: 0
+	at com.gorky.appiumdemo.utils.ExcelDataProvider.hasNext(ExcelDataProvider.java:84)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 9 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">com.gorky.appiumdemo.testcases.customer.CustomerPage_001_CustomerCase_Test#customerDemo</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{keyword=156}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15.11 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:02:37&apos;
+System info: host: &apos;GUO-PC&apos;, ip: &apos;169.254.235.171&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=F:\appiumTest\appiumdemo\res\app\laikebao-app-release-1129-3.apk, appPackage=cn.jufuns.laikebao, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=741AECQK26845, platform=LINUX, appActivity=cn.jufuns.laikebao.activity.LoginActivity, desired={app=F:\appiumTest\appiumdemo\res\app\laikebao-app-release-1129-3.apk, appPackage=cn.jufuns.laikebao, appActivity=cn.jufuns.laikebao.activity.LoginActivity, platformVersion=6.0.1, automationName=null, sessionOverride=true, unicodeKeyboard=true, platformName=Android, deviceName=meizu, resetKeyboard=true}, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, automationName=null, browserName=Android, takesScreenshot=true, javascriptEnabled=true, sessionOverride=true, unicodeKeyboard=true, platformName=Android, resetKeyboard=true}]
+Session ID: 1c5ce25a-5b23-4452-8e9e-e3f27240b0d8
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:176)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:393)
+	at org.openqa.selenium.By$ById.findElement(By.java:214)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.gorky.appiumdemo.utils.AppiumUtil.findElement(AppiumUtil.java:90)
+	at com.gorky.appiumdemo.utils.AppiumUtil.doesElementsExist(AppiumUtil.java:412)
+	at com.gorky.appiumdemo.testcases.customer.CustomerPage_001_CustomerCase_Test.customerDemo(CustomerPage_001_CustomerCase_Test.java:26)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m4">com.gorky.appiumdemo.testcases.customer.CustomerPage_001_CustomerCase_Test#customerDemo</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{keyword=15521322686}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

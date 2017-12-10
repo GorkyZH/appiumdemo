@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.gorky.appiumdemo.testcases.customer.CustomerPage_001_CustomerCase_Test">
+        <methods>
+          <include name="customerDemo"/>
+          <include name="initTest"/>
+          <include name="homeDemo"/>
+        </methods>
+      </class> <!-- com.gorky.appiumdemo.testcases.customer.CustomerPage_001_CustomerCase_Test -->
+      <class name="com.gorky.appiumdemo.testcases.login.LoginPage_001_LoginCase_Test">
+        <methods>
+          <include name="loginDemo"/>
+          <include name="initTest"/>
+        </methods>
+      </class> <!-- com.gorky.appiumdemo.testcases.login.LoginPage_001_LoginCase_Test -->
+      <class name="com.gorky.appiumdemo.testcases.home.HomePage_001_HomeCase_Test">
+        <methods>
+          <include name="homeDemo"/>
+        </methods>
+      </class> <!-- com.gorky.appiumdemo.testcases.home.HomePage_001_HomeCase_Test -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

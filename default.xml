@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="1">
+    <!-- server地址 -->
+    <parameter name="serverURL" value="http://127.0.0.1:4723/wd/hub"></parameter>
+    
+    <!-- 自动化测试名称 selendroid or appium,如果sdk版本>=17请使用appium；如果sdk版本<=17请使用selendroid -->
+    <parameter name="automationName" value="Appium"></parameter>
+    
+    <!-- 测试平台 ios和android -->
+    <parameter name="platformName" value="Android"></parameter>
+   
+    <!-- 平台版本 -->
+    <parameter name="platformVersion" value="5.0.0"></parameter>
+  
+    <!-- 设备名字 -->
+    <parameter name="deviceName" value="Custom Phone"></parameter>
+   
+    <!-- ios app路径 -->
+    <parameter name="iosAppPath" value="res/app/***.app"></parameter>
+   
+    <!--  android app路径-->
+    <parameter name="androidAppPath" value="res/app/laikebao-app-release-1129-3.apk"></parameter>
+   
+    <!-- app的包 -->
+    <parameter name="appPackage" value="cn.jufuns.laikebao"></parameter>
+    
+    <!-- app的activity -->
+    <parameter name="appActivity" value="cn.jufuns.laikebao.activity.LoginActivity"></parameter>
+    
+    <!--是否支持unicode输入设置为true可以输入中文字符  -->
+    <parameter name="unicodeKeyboard" value="true"></parameter>
+   
+    <!-- 重置键盘输入法 -->
+    <parameter name="resetKeyboard" value="true"></parameter>
+   
+    <!--设备UDID iPhone真机使用或者android并行测试可以使用  -->
+	<parameter name="udid" value="" />
+   
+	<!-- 设置为true之后会覆盖当前session -->
+    <parameter name="sessionOverride" value="true"></parameter>
+   
+    <!-- 进程等待1秒中的控制时间，单位是秒 -->
+    <parameter name="sleepTime" value="1"></parameter>
+   
+    <!-- 页面元素15秒不出现超时时间 -->
+    <parameter name="elementTimeOut" value="15"></parameter>
+   
+    <!-- app属性文件 -->
+    <parameter name="appFilePath" value="res/properties/app.properties"></parameter>
+    
+    <!-- <test name="login" preserve-order="true">
+    	<classes>
+     	 	<class name="com.gorky.appiumdemo.testcases.login.LoginPage_001_LoginCase_Test"/>
+   		</classes>
+  	</test>
+  	<test name="home" preserve-order="true">
+    	<classes>
+     	 	<class name="com.gorky.appiumdemo.testcases.home.HomePage_001_HomeCase_Test"/>
+   		</classes>
+  	</test> -->
+  	
+  	<listeners>
+  	    <!-- excel报告 -->
+  	    <listener class-name="com.gorky.appiumdemo.plugins.excelReporter.TestResultListener"/>
+  	    <listener class-name="com.gorky.appiumdemo.plugins.excelReporter.ExcelReporter"/>
+  	</listeners>
+</suite> 
