@@ -11,10 +11,10 @@
     <parameter name="platformName" value="Android"/>
    
     <!-- 平台版本 -->
-    <parameter name="platformVersion" value="6.0.1"/>
+    <parameter name="platformVersion" value="5.0.0"/>
   
     <!-- 设备名字 -->
-    <parameter name="deviceName" value="meizu"/>
+    <parameter name="deviceName" value="custom_phone"/>
    
     <!-- ios app路径 -->
     <parameter name="iosAppPath" value="res/app/***.app"/>
@@ -53,9 +53,11 @@
     <parameter name="appFilePath" value="res/properties/app.properties"/>
     
   	
-    <test name="登录">
+    <test name="功能测试">
     	<classes>
      	 	<class name="com.gorky.appiumdemo.testcases.login.LoginPage_001_LoginCase_Test"/>
+     	 	<class name="com.gorky.appiumdemo.testcases.home.HomePage_001_HomeCase_Test"/>
+     	 	<class name="com.gorky.appiumdemo.testcases.customer.CustomerPage_001_CustomerCase_Test"/>
    		</classes>
   	</test> 
   	
@@ -65,11 +67,11 @@
    		</classes>
   	</test>  -->  
   	
-    <test name="我的客户">
+    <!-- <test name="我的客户">
     	<classes>
      	 	<class name="com.gorky.appiumdemo.testcases.customer.CustomerPage_001_CustomerCase_Test"/>
    		</classes>
-  	</test>  
+  	</test>   -->
   	
   	<listeners>
   	    <!-- excel报告 -->
