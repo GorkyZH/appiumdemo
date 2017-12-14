@@ -155,6 +155,7 @@ public class AppiumUtil {
 			break;
 		case "PartialLinkText":
 			element = driver.findElementByPartialLinkText(locateValue);
+			
 			break;
 		case "TagName":
 			element = driver.findElementByTagName(locateValue);
@@ -349,7 +350,7 @@ public class AppiumUtil {
 	}
 	
 	/**
-	 * 判断实际文本时候包含期望文本
+	 * 判断实际文本是否包含期望文本
 	 */
 	public void isContains(String actrual,String expected) {
 		try {
