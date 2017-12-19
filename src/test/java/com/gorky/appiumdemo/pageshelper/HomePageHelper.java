@@ -25,7 +25,7 @@ public class HomePageHelper {
 		appiumUtil.waitForElementToLoad(elementTimeOut, HomePage.HP_TEXTVIEW_GETCUSTOMER_COUNT);
 		appiumUtil.waitForElementToLoad(elementTimeOut, HomePage.HP_TEXTVIEW_GETCUSTOMER_INCALLING);
 		appiumUtil.waitForElementToLoad(elementTimeOut, HomePage.HP_TEXTVIEW_GETCUSTOMER_INCALLINGNUM);
-		appiumUtil.waitForElementToLoad(elementTimeOut, HomePage.HP_TEXTVIEW_GETCUSTOMER_ROB);
+//		appiumUtil.waitForElementToLoad(elementTimeOut, HomePage.HP_TEXTVIEW_GETCUSTOMER_ROB);
 		appiumUtil.waitForElementToLoad(elementTimeOut, HomePage.HP_TEXTVIEW_GETCUSTOMER_ROBGUEST);
 		appiumUtil.waitForElementToLoad(elementTimeOut, HomePage.HP_TEXTVIEW_GETCUSTOMER_ROBGUESTNUM);
 		logger.info("元素加载完毕！");
@@ -34,6 +34,14 @@ public class HomePageHelper {
 	/**在页面执行点击操作 */
 	public static void clickText(AppiumUtil appiumUtil,By byElement){
 		appiumUtil.click(byElement);
+	}
+	
+	/**
+	 * 获取文本值
+	 * @return 
+	 */
+	public static String getText(AppiumUtil appiumUtil,By byElement) {
+		return appiumUtil.getText(byElement);
 	}
 	
 	/**
