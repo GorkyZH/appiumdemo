@@ -8,4 +8,9 @@ public class TitlebarPage {
 	 */
 	public static final By TP_IMAGEVIEWE_GOBACK = By.id("cn.jufuns.laikebao:id/common_iv_titlebar_left");
 	
+	/**
+	 * 定位元素：页面标题
+	 */
+	public static final By TP_TEXTVIEW_TITLE = By.id("cn.jufuns.laikebao:id/common_tv_titlebar_title");
+	
 }
