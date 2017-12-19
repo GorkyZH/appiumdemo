@@ -12,4 +12,12 @@ public class TitlebarPageHelper {
 	public static void clickGoback(AppiumUtil appiumUtil,By byElement) {
 		appiumUtil.click(byElement);
 	}
+	
+	/**
+	 * 获取文本值
+	 * @return 
+	 */
+	public static String getText(AppiumUtil appiumUtil,By byElement) {
+		return appiumUtil.getText(byElement);
+	}
 }
