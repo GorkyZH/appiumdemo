@@ -28,6 +28,11 @@ public class CallingPage {
 	public static final By CP_LISTVIEW = By.id("cn.jufuns.laikebao:id/erv_phone_list");
 	
 	/**
+	 * 定位元素：listview下的LinearLayout
+	 */
+	public static final By CP_LISTVIEW_LINEARLAYOUT = By.xpath("//android.support.v7.widget.RecyclerView[1]//android.widget.LinearLayout"); 
+	
+	/**
 	 * 定位元素：今日来电或累计来电列表中没有记录时的图标
 	 */
 	public static final By CP_IMAGEVIEW_CALL = By.id("cn.jufuns.laikebao:id/iv_fragment_call_record");
@@ -40,15 +45,15 @@ public class CallingPage {
 	/**
 	 * 定位元素：item中的手机号码
 	 */
-	public static final By RCP_TEXTVIEW_PHONE = By.id("cn.jufuns.laikebao:id/tv_customer_phone");
+	public static final By CP_TEXTVIEW_PHONE = By.id("cn.jufuns.laikebao:id/tv_customer_phone");
 	
 	/**
 	 * 定位元素：item中的项目名称
 	 */
-	public static final By RCP_TEXTVIEW_PROJECT = By.id("cn.jufuns.laikebao:id/tv_customer_project_name");
+	public static final By CP_TEXTVIEW_PROJECT = By.id("cn.jufuns.laikebao:id/tv_customer_project_name");
 	
 	/**
 	 * 定位元素：item中的拨号图标
 	 */
-	public static final By RCP_IMAGEVIEW_CALL = By.id("cn.jufuns.laikebao:id/iv_phone_call");
+	public static final By CP_IMAGEVIEW_CALLING = By.id("cn.jufuns.laikebao:id/iv_phone_call");
 }
