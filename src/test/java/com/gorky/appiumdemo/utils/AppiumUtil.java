@@ -418,6 +418,13 @@ public class AppiumUtil {
 	}
 	
 	/**
+	 * 获取当前activity
+	 */
+	public void getCurrentActivity() {
+		driver.getClass();
+	}
+	
+	/**
 	 * 长按操作
 	 */
 	public void longPress(By by) {
@@ -511,14 +518,6 @@ public class AppiumUtil {
 			System.err.println("执行命令"+s+"出错");
 		}
 	}
-	
-	/**
-	 * 点击Listview列表
-	 */
-	/*public void clickListview(By byElement) {
-		WebElement element = findElement(byElement);
-		element.getLocation().
-	}*/
 	
 	/**
 	 * 安装app

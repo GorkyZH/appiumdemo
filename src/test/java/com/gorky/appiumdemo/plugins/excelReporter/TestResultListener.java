@@ -76,15 +76,15 @@ public class TestResultListener extends TestListenerAdapter{
 		super.onFinish(textContext);
 		System.out.println("onFinish()--driver:"+(AppiumDriver) textContext.getAttribute("APPIUM_DRIVER"));
 		System.out.println("onFinish()--appiumUtil:"+(AppiumUtil) textContext.getAttribute("APPIUMUTIL"));
-		AppiumDriver driver = (AppiumDriver)textContext.getAttribute("APPIUM_DRIVER");
+//		AppiumDriver driver = (AppiumDriver)textContext.getAttribute("APPIUM_DRIVER");
 		AppiumUtil appiumUtil = (AppiumUtil)textContext.getAttribute("APPIUMUTIL");
-		if(driver!=null && appiumUtil!=null) {
+//		if(driver!=null && appiumUtil!=null) {
 			appFilePath = (String) textContext.getAttribute("APPFILEPATH");
 			appPackage = (String) textContext.getAttribute("APPPACKAGE");
 			appiumUtil.closeApp(PropertiesDataProvider.getTestData(appFilePath, appPackage));
-		}else {
+		/*}else {
 			
-		}
+		}*/
 
 		// List of test results which we will delete later
 		ArrayList<ITestResult> testsToBeRemoved = new ArrayList<ITestResult>();

@@ -7,10 +7,10 @@ import org.testng.annotations.Test;
 import com.gorky.appiumdemo.base.BasePrepare;
 import com.gorky.appiumdemo.pages.HomePage;
 import com.gorky.appiumdemo.pages.LoginPage;
-import com.gorky.appiumdemo.pages.MyguestPage;
+import com.gorky.appiumdemo.pages.CustomerPage;
 import com.gorky.appiumdemo.pageshelper.HomePageHelper;
 import com.gorky.appiumdemo.pageshelper.LoginPageHelper;
-import com.gorky.appiumdemo.pageshelper.MyguestPageHelper;
+import com.gorky.appiumdemo.pageshelper.CustomerPageHelper;
 
 
 /**
@@ -32,14 +32,6 @@ public class LoginPage_001_LoginCase_Test extends BasePrepare{
 		
 		LoginPageHelper.clickLoginBtn(appiumUtil, LoginPage.LP_BUTTON_LOGIN);
 		
-		/*try {
-			Thread.sleep(3000);
-			HomePageHelper.clickText(appiumUtil, HomePage.HP_TEXTVIEW_GETCUSTOMER_COUNT);
-			Thread.sleep(1000);
-			MyguestPageHelper.clickSearchImageview(appiumUtil, MyguestPage.MP_IMAGEVIEW_SEARCH);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}*/
 	}
 
 	

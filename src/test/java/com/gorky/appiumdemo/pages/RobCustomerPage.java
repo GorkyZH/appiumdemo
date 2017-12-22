@@ -28,6 +28,16 @@ public class RobCustomerPage {
 	public static final By RCP_LISTVIEW = By.id("cn.jufuns.laikebao:id/lv_rob_customer_list");
 	
 	/**
+	 * 定位元素：列表下的LinearLayout
+	 */
+	public static final By RCP_LISTVIEW_LINEARLAYOUT = By.xpath("//android.widget.ListView[1]//android.widget.LinearLayout");
+	
+	/**
+	 * 定位元素：列表中第一个item
+	 */
+	public static final By RCP_ITEM_RELATIVELAYOUT = By.xpath("//android.widget.ListView[1]//android.widget.LinearLayout[1]//android.widget.RelativeLayout[1]");
+	
+	/**
 	 * 定位元素：今日抢客或累计抢客列表中没有记录时的图标
 	 */
 	public static final By RCP_IMAGEVIEW_CUSTOMER = By.id("cn.jufuns.laikebao:id/iv_fragment_customer_record");

@@ -10,10 +10,10 @@ import io.appium.java_client.android.AndroidKeyCode;
 
 /**
  * @author GUO
- * @description 我的客户页面操作类
+ * @description 搜索页面操作类
  */
-public class CustomerPageHelper {
-	public static Logger logger = Logger.getLogger(CustomerPageHelper.class);
+public class SearchPageHelper {
+	public static Logger logger = Logger.getLogger(SearchPageHelper.class);
 	
 	/**
 	 * 判断是否包含元素
@@ -27,13 +27,6 @@ public class CustomerPageHelper {
 	 */
 	public static void isTextCorrect(AppiumUtil appiumUtil,String actual,String expected) {
 		appiumUtil.isTextCorrect(actual, expected);
-	}
-	
-	/**
-	 * 获取文本内容
-	 */
-	public static String getText(AppiumUtil appiumUtil,By byElement) {
-		return appiumUtil.getText(byElement);
 	}
 	
 	/**
@@ -76,14 +69,8 @@ public class CustomerPageHelper {
 	/**
 	 * 点击取消按钮
 	 */
-	public static void click(AppiumUtil appiumUtil,By byElement) {
+	public static void clickCancel(AppiumUtil appiumUtil,By byElement) {
 		appiumUtil.click(byElement);
-	}
-	
-	/**
-	 * 滚动列表
-	 */
-	public static void scrollListview(AppiumUtil appiumUtil,By byElement) {
 	}
 	
 	

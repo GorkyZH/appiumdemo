@@ -11,7 +11,7 @@ import com.gorky.appiumdemo.pageshelper.HomePageHelper;
  * @description 跳转到我的客户页面
  */
 public class HomePage_001_HomeCase_Test extends BasePrepare1{
-	public static String str1,str2;
+	public static String expected_num;
 	
 	@Test
 	public void homeDemo() {
@@ -21,6 +21,7 @@ public class HomePage_001_HomeCase_Test extends BasePrepare1{
 	//点击我的客户数，进入我的客户页面
 	@Test
 	public void intoMyguest() {
+		expected_num = HomePageHelper.getText(appiumUtil, HomePage.HP_TEXTVIEW_GETCUSTOMER_COUNT);
 		HomePageHelper.clickText(appiumUtil, HomePage.HP_TEXTVIEW_GETCUSTOMER_COUNT);
 	}
 	
