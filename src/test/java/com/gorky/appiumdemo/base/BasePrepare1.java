@@ -28,7 +28,6 @@ import com.gorky.appiumdemo.utils.LogConfiguration;
  */
 
 public abstract class BasePrepare1 {
-//	protected AppiumDriver driver;
 	protected AppiumUtil appiumUtil = null;
 	public static Logger logger = Logger.getLogger(BasePrepare1.class);
 	protected String appFilePath;
