@@ -20,7 +20,7 @@
     <parameter name="iosAppPath" value="res/app/***.app"/>
    
     <!--  android app路径-->
-    <parameter name="androidAppPath" value="res/app/laikebao-app-release-1129-3.apk"/>
+    <parameter name="androidAppPath" value="res/app/laikebao146.apk"/>
    
     <!-- app的包 -->
     <parameter name="appPackage" value="cn.jufuns.laikebao"/>
@@ -53,25 +53,78 @@
     <parameter name="appFilePath" value="res/properties/app.properties"/>
     
   	
-    <test name="功能测试">
+    <test name="功能测试" preserve-order="true">
     	<classes>
      	 	<class name="com.gorky.appiumdemo.testcases.login.LoginPage_001_LoginCase_Test"/>
-     	 	<class name="com.gorky.appiumdemo.testcases.home.HomePage_001_HomeCase_Test"/>
-     	 	<class name="com.gorky.appiumdemo.testcases.customer.CustomerPage_001_CustomerCase_Test"/>
+     	 	<!-- 我的客户页面用例 -->
+     	 	<class name="com.gorky.appiumdemo.testcases.home.HomePage_001_HomeCase_Test">
+     	 	    <methods>
+     	 	        <include name="homeDemo"/>
+     	 	        <include name="intoMyguest"/>
+     	 	    </methods>
+     	 	</class>
+     	 	<class name="com.gorky.appiumdemo.testcases.customer.CustomerPage_001_CustomerCase_Test">
+     	 	    <methods>
+     	 	        <include name="customerCase1"/>
+     	 	        <include name="customerCase2"/>
+     	 	    </methods>
+     	 	</class>
+     	 	<!-- 今日来电页面用例 -->
+     	 	<!-- <class name="com.gorky.appiumdemo.testcases.home.HomePage_002_HomeCase_Test">
+     	 	    <methods>
+     	 	        <include name="homeDemo"/>
+     	 	        <include name="intoIncallingPagedemo"/>
+     	 	    </methods>
+     	 	</class>
+     	 	<class name="com.gorky.appiumdemo.testcases.customer.CallingPage_001_CallingCase_Test">
+     	 	    <methods>
+     	 	        <include name="callingCase1"/>
+     	 	        <include name="callingCase3"/>
+     	 	    </methods>
+     	 	</class> -->
+     	 	<!-- 累计来电页面用例 -->
+     	    <!-- <class name="com.gorky.appiumdemo.testcases.home.HomePage_004_HomeCase_Test">
+     	 	    <methods>
+     	 	        <include name="homeDemo"/>
+     	 	        <include name="intoIncallingnumPagedemo"/>
+     	 	    </methods>
+     	 	</class>
+     	 	<class name="com.gorky.appiumdemo.testcases.customer.CallingNumPage_001_CallingNumCase_Test">
+     	 	    <methods>
+     	 	        <include name="callingNumCase1"/>
+     	 	        <include name="callingNumCase2"/>
+     	 	        <include name="callingNumCase3"/>
+     	 	        <include name="callingNumCase4"/>
+     	 	    </methods>
+     	 	</class> -->
+     	 	<!-- 今日抢客页面用例
+     	 	<class name="com.gorky.appiumdemo.testcases.home.HomePage_003_HomeCase_Test">
+     	 	    <methods>
+     	 	        <include name="homeDemo"/>
+     	 	        <include name="intoRobguestPagedemo"/>
+     	 	    </methods>
+     	 	</class>
+     	 	<class name="com.gorky.appiumdemo.testcases.customer.RobCustomerPage_001_RobCustomerCase_Test">
+     	 	    <methods>
+     	 	        <include name="robCustomerCase1"/>
+     	 	    </methods>
+     	 	</class> -->
+     	 	<!-- 累计抢客页面用例 -->
+     	 	<!-- <class name="com.gorky.appiumdemo.testcases.home.HomePage_005_HomeCase_Test">
+     	 	    <methods>
+     	 	        <include name="homeDemo"/>
+     	 	        <include name="intoRobguestnumPagedemo"/>
+     	 	    </methods>
+     	 	</class>
+     	 	<class name="com.gorky.appiumdemo.testcases.customer.RobCustomerNumPage_001_RobCustomerNumCase_Test">
+     	 	    <methods>
+     	 	        <include name="robCustomerNumCase1"/>
+     	 	        <include name="robCustomerNumCase2"/>
+     	 	        <include name="robCustomerNumCase3"/>
+     	 	    </methods>
+     	 	</class> -->
    		</classes>
   	</test> 
-  	
-    <!-- <test name="首页">
-    	<classes>
-     	 	<class name="com.gorky.appiumdemo.testcases.home.HomePage_001_HomeCase_Test"/>
-   		</classes>
-  	</test>  -->  
-  	
-    <!-- <test name="我的客户">
-    	<classes>
-     	 	<class name="com.gorky.appiumdemo.testcases.customer.CustomerPage_001_CustomerCase_Test"/>
-   		</classes>
-  	</test>   -->
   	
   	<listeners>
   	    <!-- excel报告 -->
